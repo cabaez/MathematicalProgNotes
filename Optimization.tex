@@ -1,0 +1,145 @@
+\documentclass[10pt,legalpaper]{book}
+
+%Packages Used
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%Meta-Data
+\author{Carlos Baez}
+\title{Notes on Optimization and Mathematical Programming}
+
+%Formatting
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[chapter]
+\theoremstyle{plain}
+\newtheorem{prop}{Property}
+\theoremstyle{remark}
+\newtheorem{proprem}{Remark}[prop]
+
+%Document
+\makeindex
+\begin{document}
+\maketitle
+\tableofcontents
+\part{Mathematical Background}
+
+\chapter{Mathematical Preliminaries}
+\section{Set Theory and Logic}
+\section{Norms}
+\section{Analysis}
+
+\chapter{Linear Algebra}
+\section{Fields and Number Systems}
+\section{Matrices}
+\begin{defn}[Matrix]
+A \textbf{matrix} is defined as a rectangular array of numbers written as:
+\begin{center}
+\begin{equation}
+\textbf{A} = ||a_{ij}|| = 
+	\left[ 
+		\begin{matrix}
+			a_{11} & a_{12} & ... & a_{1n}  \\
+			a_{21} & a_{22} & ... & a_{2n}  \\
+			:      &        &     & :       \\
+			a_{m1} & a_{m2} & ... & a_{mn}  \\
+		\end{matrix}
+	\right]
+\end{equation}
+\end{center}
+where the matrix is of size \textit{m}$\times$\textit{n}.
+\end{defn}
+\subsection{Properties of Matrices}
+Given matrices \textbf{A}, \textbf{B}, \textbf{C}: 
+\begin{prop}[Equal Matrices]
+\textbf{A} = \textbf{B} iff $a_{ij} = b_{ij} \forall$ i,j.
+\end{prop}
+
+\begin{prop}[Adding Matrices]
+If \textbf{C}=\textbf{A}+\textbf{B}, the elements of 
+\textbf{C} are given by $c_{ij}=a_{ij}+b_{ij}.$
+\begin{proprem}
+\textbf{A} and \textbf{B} can only be added if they both have the same number of rows and columns.
+\end{proprem} 
+\end{prop}
+
+\begin{prop}[Commutative Law]
+\begin{equation}
+\textbf{A}+\textbf{B}=\textbf{B}+\textbf{A}
+\end{equation}	
+\end{prop}
+
+\begin{prop}[Associative Law]
+\begin{equation}
+\textbf{A}+(\textbf{B}+\textbf{C})=(\textbf{A}+\textbf{B})+\textbf{C}=\textbf{A}+\textbf{B}+\textbf{C}
+\end{equation}	
+\end{prop}
+
+\begin{prop}[Multiplying Matrices]
+Given $\lambda \in \mathbb{R}, \lambda$\textbf{A} = $||\lambda a_{ij}||.$ and $\lambda$\textbf{A} =\textbf{A}$\lambda.$
+\end{prop}
+
+\begin{prop}[Product of Matrices]
+\textbf{A}\textbf{B} is the product of \textbf{A} and \textbf{B}. If \textbf{A} is an m$\times$n matrix and \textbf{B} is an u$\times$v matrix, then \textbf{C}=\textbf{A}\textbf{B} is defined and \textbf{C} is an m$\times$v matrix. 
+\begin{proprem}
+The product of \textbf{A} and \textbf{B} is defined iff the number of columns of \textbf{A} is equal to the number of rows in \textbf{B}. 
+\end{proprem}
+\begin{proprem}
+The elements of \textbf{C} can be computed by 
+\begin{equation}
+c_{ij}=\sum\limits_{k=1}^r a_{ik}b_{kj},\;\;\;i=1,...,m; j=1,...,n.
+\end{equation}
+\end{proprem}
+\end{prop}
+
+Hello1
+\subsection{Special Types of Matrices}
+Why is this
+\section{Vector Spaces}
+\section{Determinants}
+\section{Linear Transformations}
+\section{Similarity}
+\section{Polynomials and Polynomial Matrices}
+\section{Similarity 2}
+\section{Matrix Analysis}
+
+%Mathematical Optimization 
+\part{Mathematical Optimization}
+\chapter{Linear Programming}
+\chapter{Convex Optimization}
+\section{Convex Programming}
+\subsection{Semidefinite Programming}
+\subsection{Linear-Fractional Programming}
+
+\chapter{Combinatorial Optimization}
+\section{Graphs}
+\section{Network Flow}
+\section{Integer Programming}
+
+\chapter{Nonlinear Optimization} 
+\section{Nonlinear Programming}
+\section{Fractional Programming}
+
+\chapter{Multiple Objective Optimization}
+\chapter{Stochastic Programming}
+\chapter{Goal Programming}
+\chapter{Constraint Programming}
+
+%Algorithms
+\part{Algorithms and Heuristics}
+\chapter{Computational Complexity}
+\chapter{Constrained Nonlinear Algorithms}
+\chapter{Dynamic Programming}
+
+%Heuristics
+\chapter{Heuristics}
+\section{Evolutionary Algorithms}
+\section{Simulated Annealing}
+
+
+\end{document}
+
+
+
